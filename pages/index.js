@@ -23,9 +23,7 @@ export default function Dashboard() {
   const SHEET_NAME = 'Sheet1';
   
   // GANTI DENGAN URL VERCEL ANDA SETELAH DEPLOY
-  const VERCEL_API = process.env.NEXT_PUBLIC_VERCEL_URL 
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/sensor`
-    : '/api/sensor';
+const VERCEL_API = 'https://dht22dho.vercel.app/api/sensor';
 
   useEffect(() => {
     fetchData();
